@@ -1,0 +1,7 @@
+{
+	"name": "rozetka-count-daily",
+	"version": "0.1",
+	"buildTag": "latest",
+	"env": null,
+	"template": "project_puppeteer_crawler"
+}

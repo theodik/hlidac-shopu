@@ -1,0 +1,27 @@
+{
+  "title": "rozetka-info",
+  "description": "Hlidac Rozetka Actor 2",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+        "title": "startUrls",
+        "type": "array",
+        "description": "startUrls",
+        "editor": "requestListSources"
+    },
+    "maxConcurrency": {
+        "title": "maxConcurrency",
+        "type": "integer",
+        "description": "Max concurrency",
+        "editor": "number"
+    },
+    "proxyCountryCode": {
+        "title": "proxyCountryCode",
+        "type": "string",
+        "description": "Country code for proxies",
+        "editor": "textfield"
+    }
+  },
+  "required": ["startUrls"]
+}

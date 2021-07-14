@@ -1,0 +1,48 @@
+{
+  "title": "rozetka-count-daily",
+  "description": "Hlidac Rozetka actors 1 (Daily) and 3 (Count)",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "type": {
+        "title": "type",
+        "type": "string",
+        "description": "Specify the type of the actor — daily or count",
+        "editor": "select",
+        "default": "DAILY",
+        "enum": ["DAILY", "COUNT"],
+        "enumTitles": ["DAILY", "COUNT"]
+    },
+    "maxConcurrency": {
+        "title": "maxConcurrency",
+        "type": "integer",
+        "description": "Max concurrency",
+        "editor": "number"
+    },
+    "maxRequestsPerCrawl": {
+        "title": "maxRequestsPerCrawl",
+        "type": "integer",
+        "description": "maxRequestsPerCrawl",
+        "editor": "number"
+    },
+    "maxCategories": {
+        "title": "maxCategories",
+        "type": "integer",
+        "description": "maxCategories",
+        "editor": "number"
+    },
+    "maxSubcategories": {
+        "title": "maxSubcategories",
+        "type": "integer",
+        "description": "maxSubcategories",
+        "editor": "number"
+    },
+    "proxyCountryCode": {
+        "title": "proxyCountryCode",
+        "type": "string",
+        "description": "Country code for proxies",
+        "editor": "textfield"
+    }
+  },
+  "required": ["type"]
+}
